@@ -42,7 +42,7 @@ module Semantic
       words = string.split(" ")
 
       if @stem_words
-        words.map {|word| Stemmer.stem_word(word) }
+        words.map(&:stem)
       else
         words
       end
