@@ -1,4 +1,5 @@
-require 'stemmer'
+# require 'stemmer'
+require 'fast_stemmer'
 require "set"
 module Semantic
   class Parser
