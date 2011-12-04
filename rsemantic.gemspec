@@ -25,17 +25,20 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<term-ansicolor>, [">= 1.0.3"])
       s.add_runtime_dependency(%q<rspec>, [">= 1.1.5"])
       s.add_runtime_dependency(%q<diff-lcs>, [">= 1.1.2"])
+      s.add_runtime_dependency(%q<fast-stemmer>, [">= 1.0.0"])
       s.add_development_dependency(%q<hoe>, [">= 2.3.2"])
     else
       s.add_dependency(%q<term-ansicolor>, [">= 1.0.3"])
       s.add_dependency(%q<rspec>, [">= 1.1.5"])
       s.add_dependency(%q<diff-lcs>, [">= 1.1.2"])
       s.add_dependency(%q<hoe>, [">= 2.3.2"])
+      s.add_dependency(%q<fast-stemmer>, [">= 1.0.0"])
     end
   else
     s.add_dependency(%q<term-ansicolor>, [">= 1.0.3"])
     s.add_dependency(%q<rspec>, [">= 1.1.5"])
     s.add_dependency(%q<diff-lcs>, [">= 1.1.2"])
     s.add_dependency(%q<hoe>, [">= 2.3.2"])
+    s.add_dependency(%q<fast-stemmer>, [">= 1.0.0"])
   end
 end
