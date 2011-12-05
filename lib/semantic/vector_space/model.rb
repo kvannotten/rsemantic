@@ -30,8 +30,11 @@ module Semantic
         out.puts
 
         matrix.to_a.each_with_index do |terms, index|
-          # TODO fix for 1.8.7
-          out.print "#{@keywords.key(index).ljust(6)}" if @keywords.has_value?(index)
+          if Hash.method_defined?(:key)
+            out.print "#{@keywords.key(index).ljust(6)}" if @keywords.has_value?(index)
+          else 
+            out.print "#{@keywords.index(index).ljust(6)}" if @keywords.has_value?(index)
+          end
           out.print "[ "
 
           terms.each do |document|
